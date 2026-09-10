@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS rsvps (
+  id UUID PRIMARY KEY,
+  name TEXT NOT NULL,
+  college TEXT NOT NULL,
+  phone TEXT NOT NULL UNIQUE,
+  consent TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS rate_limits (
+  scope TEXT NOT NULL,
+  client_key TEXT NOT NULL,
+  window_start BIGINT NOT NULL,
+  count INTEGER NOT NULL DEFAULT 0,
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (scope, client_key, window_start)
+);
