@@ -1,10 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "../vendor/shadcn-tailwind-4.13.0.css";
-@import "../styles/desktop-refinement.css" 
+@import "../styles/desktop-refinement.css";
 
 
 
+ 
 @utility scrollbar-thin {
   scrollbar-width: thin;
 }
