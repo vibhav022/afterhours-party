@@ -4,8 +4,6 @@
 @import "../styles/desktop-refinement.css";
 
 
-
- 
 @utility scrollbar-thin {
   scrollbar-width: thin;
 }
