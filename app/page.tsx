@@ -163,7 +163,7 @@ export default function Home() {
             <div className="price-banner"><span>EARLY BIRD IS OUT NOW</span><b>50 PASSES ONLY</b></div>
             <div className="price-grid">
               <div className="price-option"><span>STAG PASS</span><strong>₹1,200</strong></div>
-              <div className="price-option"><span>COUPLE PASS</span><strong>₹2,100</strong></div>
+              <div className="price-option"><span>COUPLE PASS</span><strong>₹2,200</strong></div>
               <div className="price-option"><span>GROUP <em>(10+)</em></span><strong>₹1,100 <small>PP</small></strong></div>
               <div className="price-option price-table"><span>TABLE <em>(10 PERSON)</em></span><strong>₹25K</strong></div>
             </div>
