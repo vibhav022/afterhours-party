@@ -180,26 +180,27 @@ footer{padding-top:105px;background:linear-gradient(180deg,#080607,#13070b 55%,#
 .rsvp-price{display:block;margin:20px 0 4px;padding:0;border-color:#7d3041;background:linear-gradient(135deg,#290b13,#10080b 72%);box-shadow:5px 5px 0 #3b1019}.rsvp-price:before{background:linear-gradient(116deg,#ed536513,transparent 34%,#ed536508 69%,transparent)}.price-banner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 14px;border-bottom:1px solid #71303e;color:#ffecf0}.price-banner span{font-size:10px;font-weight:900;letter-spacing:1.15px;color:#ffedf0}.price-banner b{flex:none;padding:4px 6px;background:#d92a42;color:#fff;font-size:8px;letter-spacing:.9px;line-height:1.1}.price-grid{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr}.price-option{min-height:82px;padding:13px 14px;border-right:1px solid #51232d;border-bottom:1px solid #51232d}.price-option:nth-child(even){border-right:0}.price-option:nth-last-child(-n+2){border-bottom:0}.price-option span{display:block;color:#e89aa8;font-size:9px;font-weight:800;letter-spacing:1px}.price-option span em{font-style:normal;color:#b58994}.price-option strong{display:block;margin-top:8px;font-family:AfterhoursGothic,Georgia,serif;font-size:32px;line-height:.78;font-weight:400;color:#fff1f3;letter-spacing:-.025em;text-shadow:0 2px 14px #d8274955}.price-option strong small{font-family:var(--font-sans);font-size:9px;font-weight:900;letter-spacing:1px;color:#e997a7}.price-table{background:#3a0c17}.price-table strong{color:#ff9baa}@media(max-width:760px){.rsvp-price{margin-top:18px;box-shadow:4px 5px 0 #3b1019}.price-banner{padding:11px 12px}.price-banner span{font-size:9px}.price-banner b{font-size:7px}.price-option{min-height:75px;padding:12px}.price-option strong{font-size:29px}.price-option span{font-size:8px}}
 
 
-/* Desktop-only smooth scroll text reveal — mobile remains unchanged */
-@media (min-width: 761px) and (prefers-reduced-motion: no-preference) {
+ 
+/* Smooth text reveal on scroll — desktop + mobile */
+@media (prefers-reduced-motion: no-preference) {
   [data-scroll-scene="text"] .scroll-word {
     opacity: 0;
-    translate: 0 32px;
-    animation: desktop-scroll-reveal linear both;
+    translate: 0 24px;
+    animation: scroll-text-reveal linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 38%;
+    animation-range: entry 12% cover 42%;
     will-change: opacity, translate;
   }
 
   [data-scroll-scene="text"] h2 .scroll-word + br + .scroll-word {
-    animation-range: entry 16% cover 44%;
+    animation-range: entry 18% cover 48%;
   }
 }
 
-@keyframes desktop-scroll-reveal {
+@keyframes scroll-text-reveal {
   from {
     opacity: 0;
-    translate: 0 32px;
+    translate: 0 24px;
   }
 
   to {
